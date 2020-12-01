@@ -8,7 +8,7 @@
     --first-color-dark: #000e30;
     --first-color-darken: #000b25;
     --white-color: #e7e7e7;
-    /* --second-color: #213f88; */
+    --second-color: #213f88;
     /* ***************** Colors ***************** */
 
     /* ***************** Font and Typography ***************** */
@@ -58,3 +58,29 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Layout */
+    .bd-grid{
+        max-width: 1024px;
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 2rem;
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .l-header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--second-color);
+    }
+/* Layout */
+
+
+/* Navigation */
+
+/* Navigation */
