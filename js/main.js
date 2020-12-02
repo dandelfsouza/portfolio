@@ -1,10 +1,10 @@
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close');
+const selectElement = function(element){
+    return document.querySelector(element);
+}
+let menu = selectElement('.menu-toggle');
+let body = selectElement('body');
 
-    toggleMenu.addEventListener('click', ()=>{
-        navMenu.classList.toggle('show');
-    });
-    closeMenu.addEventListener('click', ()=>{
-        navMenu.classList.remove('show');
-    });
+menu.addEventListener('click', function(){
+    body.classList.toggle('open');
+});
+
